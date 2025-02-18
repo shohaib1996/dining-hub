@@ -27,6 +27,13 @@ export default function Navbar() {
           <Link href="#" className="text-custom-primary " prefetch={false}>
             Home
           </Link>
+          <Link
+            href="/recipes"
+            className="text-custom-primary "
+            prefetch={false}
+          >
+            Recipes
+          </Link>
           <Link href="/about" className="text-custom-primary " prefetch={false}>
             About
           </Link>

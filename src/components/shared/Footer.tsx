@@ -33,17 +33,22 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <Link href="/recipes" className="text-gray-400 hover:text-white">
+                Recipes
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="text-gray-400 hover:text-white">
                 About
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <Link href="/services" className="text-gray-400 hover:text-white">
                 Services
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <Link href="contact" className="text-gray-400 hover:text-white">
                 Contact
               </Link>
             </li>

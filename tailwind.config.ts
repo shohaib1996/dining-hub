@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { DEFAULT_CIPHERS } from "tls";
 
 export default {
   darkMode: ["class"],
@@ -9,6 +10,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: [
+          "Montserrat Alternates",
+          "sans-serif",
+          "Arial",
+          "Helvetica",
+        ],
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -59,7 +68,10 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      // Custom Colors
+      // Custom Colors for background
+      "bg-color": {
+        DEFAULT: "hsl(var(--bg-color))",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
