@@ -140,7 +140,7 @@ const AllRecipesPage = ({ recipes }: { recipes: AllProducts[] }) => {
                 {/* Rating and Meal Type */}
                 <div className="flex items-center justify-between mt-2 mb-4">
                   <div className="flex items-center text-yellow-500">
-                    <p className="text-gray-600 flex items-center">
+                    <div className="text-gray-600 flex items-center">
                       <span className="mr-2">Rating:</span>
                       <Rating
                         style={{ maxWidth: 60 }}
@@ -148,7 +148,7 @@ const AllRecipesPage = ({ recipes }: { recipes: AllProducts[] }) => {
                         readOnly
                         halfFillMode="svg"
                       />
-                    </p>
+                    </div>
                   </div>
                   <CardDescription className="text-sm text-gray-600">
                     {recipe.mealType}
