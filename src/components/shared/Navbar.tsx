@@ -24,29 +24,28 @@ export default function Navbar() {
           <span className="sr-only">Acme Inc</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
-          <Link
-            href="#"
-            className="text-custom-primary "
-            prefetch={false}
-          >
+          <Link href="#" className="text-custom-primary " prefetch={false}>
             Home
           </Link>
           <Link
-            href="#"
+            href="/recipes"
             className="text-custom-primary "
             prefetch={false}
           >
+            Recipes
+          </Link>
+          <Link href="/about" className="text-custom-primary " prefetch={false}>
             About
           </Link>
           <Link
-            href="#"
+            href="services"
             className="text-custom-primary "
             prefetch={false}
           >
             Services
           </Link>
           <Link
-            href="#"
+            href="contact"
             className="text-custom-primary "
             prefetch={false}
           >
@@ -56,9 +55,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <div className="hidden items-center gap-2 text-sm font-medium md:flex">
             <PhoneIcon className="h-5 w-5 text-custom-primary " />
-            <span className="text-custom-primary ">
-              123-456-7890
-            </span>
+            <span className="text-custom-primary ">123-456-7890</span>
           </div>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -78,7 +75,7 @@ export default function Navbar() {
               </div>
             </DropdownMenuContent>
           </DropdownMenu>
-          <ModeToggle/>
+          <ModeToggle />
           <Sheet>
             <SheetTrigger asChild>
               <Button
