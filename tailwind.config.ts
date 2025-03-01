@@ -52,6 +52,10 @@ export default {
         "custom-primary": {
           DEFAULT: "hsl(var(--custom-primary))",
         },
+        // Custom Colors for background
+        "bg-color": {
+          DEFAULT: "hsl(var(--bg-color))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -67,10 +71,6 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-      },
-      // Custom Colors for background
-      "bg-color": {
-        DEFAULT: "hsl(var(--bg-color))",
       },
     },
   },
