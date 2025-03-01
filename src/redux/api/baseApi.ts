@@ -9,7 +9,7 @@ import {
   } from "@reduxjs/toolkit/query/react";
   
   const baseQuery = fetchBaseQuery({
-    baseUrl: "",
+    baseUrl: "https://dorm-dine-hub-server.vercel.app",
   });
   
   const baseQueryWithoutAuth: BaseQueryFn<
